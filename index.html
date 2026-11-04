@@ -293,6 +293,13 @@ section{padding-block:72px}
   .vm-sec{padding-block:24px 40px}
   .vm-sec .cv{box-shadow:0 18px 44px rgba(60,40,20,.14)}
 }
+.cv-d{display:none}
+@media (min-width:980px){
+  #top.cover{padding:0}
+  #top.cover::before{display:none}
+  #top .cv:not(.cv-d){display:none}
+  #top .cv-d{display:block;max-width:1600px;border-radius:0;box-shadow:none}
+}
 /* тёмный блок «Тебе сюда» */
 .dark{background:#1B1814;color:#F5EFE6}
 .dark .h2{color:#F5EFE6}
@@ -359,6 +366,21 @@ section{padding-block:72px}
     <a class="hot" style="left:4.45%;top:83.17%;width:90.98%;height:4.78%" href="#offers" aria-label="Выбрать продукт или услугу"></a>
     <a class="hot" style="left:4.68%;top:88.82%;width:90.52%;height:4.45%" href="https://t.me/stydia_kontenta_bot" target="_blank" rel="noopener" aria-label="Забрать бесплатный гайд"></a>
     <a class="hot" style="left:75.29%;top:94.57%;width:20.73%;height:3.37%" href="https://t.me/Elenas_Om" target="_blank" rel="noopener" aria-label="Помощь — написать в Telegram"></a>
+  </div>
+  <div class="cv cv-d">
+    <img src="media/cover-d.jpg" width="1586" height="992" alt="Елена ОМ. Твой блог — твой стабильный пассивный доход. Продавай свои знания онлайн." loading="lazy">
+    <a class="hot" style="left:4.9%;top:1.8%;width:28.5%;height:6.3%" href="#top" aria-label="Елена ОМ — в начало"></a>
+    <a class="hot" style="left:52.8%;top:2.6%;width:11%;height:5%" href="#offers" aria-label="Продукты и услуги"></a>
+    <a class="hot" style="left:64.6%;top:2.6%;width:10%;height:5%" href="https://t.me/stydia_kontenta_bot" target="_blank" rel="noopener" aria-label="Бесплатный гайд"></a>
+    <a class="hot" style="left:76.4%;top:2.2%;width:9.3%;height:5.6%" href="https://t.me/Elenas_Om" target="_blank" rel="noopener" aria-label="Связаться в Telegram"></a>
+    <button class="hot" style="left:87%;top:2.2%;width:8.7%;height:5.6%" type="button" data-menu aria-label="Открыть меню"></button>
+    <a class="hot" style="left:5.9%;top:64.2%;width:16.4%;height:5.4%" href="#p-guide" data-open="p-guide" aria-label="Начать блог с нуля"></a>
+    <a class="hot" style="left:23.1%;top:64.2%;width:18.3%;height:5.4%" href="#p-mini" data-open="p-mini" aria-label="Создать свой продукт"></a>
+    <a class="hot" style="left:5.9%;top:70.7%;width:16.7%;height:5.4%" href="#p-funnel" data-open="p-funnel" aria-label="Продавать через блог"></a>
+    <a class="hot" style="left:23.2%;top:70.7%;width:18.6%;height:5.4%" href="#p-agent" data-open="p-agent" aria-label="Делегировать контент ИИ"></a>
+    <a class="hot" style="left:5.9%;top:78.4%;width:40.4%;height:6.9%" href="#offers" aria-label="Выбрать продукт или услугу"></a>
+    <a class="hot" style="left:5.9%;top:86.4%;width:40.4%;height:6.5%" href="https://t.me/stydia_kontenta_bot" target="_blank" rel="noopener" aria-label="Забрать бесплатный гайд"></a>
+    <a class="hot" style="left:88%;top:89.4%;width:8.9%;height:5.2%" href="https://t.me/Elenas_Om" target="_blank" rel="noopener" aria-label="Помощь — написать в Telegram"></a>
   </div>
 </section>
 
@@ -433,18 +455,6 @@ section{padding-block:72px}
       </article>
     </div>
     <div class="ctrl" data-for="resTrack"></div>
-  </div>
-</section>
-
-<!-- 4 ОТЗЫВЫ -->
-<section id="reviews" style="padding-top:20px">
-  <div class="wrap">
-    <div class="head">
-      <div><p class="eyebrow">Отзывы о работе со мной</p><h2 class="h2">С поддержкой всё становится понятнее</h2></div>
-      <p class="lead">Отзывы о работе со мной: от первых шагов с нейросетями до своего продукта и блога.</p>
-    </div>
-    <div class="track" id="revTrack"></div>
-    <div class="ctrl" data-for="revTrack"></div>
   </div>
 </section>
 
@@ -539,6 +549,18 @@ section{padding-block:72px}
     </div>
   </div>
 </section>
+<!-- 4 ОТЗЫВЫ -->
+<section id="reviews" style="padding-top:20px">
+  <div class="wrap">
+    <div class="head">
+      <div><p class="eyebrow">Отзывы о работе со мной</p><h2 class="h2">С поддержкой всё становится понятнее</h2></div>
+      <p class="lead">Отзывы о работе со мной: от первых шагов с нейросетями до своего продукта и блога.</p>
+    </div>
+    <div class="track" id="revTrack"></div>
+    <div class="ctrl" data-for="revTrack"></div>
+  </div>
+</section>
+
 </main>
 
 <footer class="foot" id="contact">
